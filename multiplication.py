@@ -13,19 +13,16 @@ for i in range (2, number +1) :
         else :
             j += 1
     numberlist.append(line)
+multiplication = []
 for i in numberlist :
-    for j in numberlist[i] :
-
-#temp1 = ['One', 'Two', 'Three', 'Four']
-#temp2 = ['One', 'Two']
-#temp3 = []
-#for i in temp1:
-#    if i not in temp2:
-#        temp3.append(i)
-
-
-
-print(max(numberlist))
+    for j in i :
+        if i.count(j) > multiplication.count(j) :
+            multiplication.append(j)
+final = 1
+for i in multiplication :
+    final *= i
+print(final)
+    
 
             
             
